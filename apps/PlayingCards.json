@@ -1,0 +1,79 @@
+[{
+    "card": "1",
+    "value": 1,
+    "suites": ["a", "b", "c", "d"],
+    "original_distribution": 4,
+    "numberRemaining": 4
+}, {
+    "card": "2",
+    "value": 2,
+    "suites": ["a", "b", "c", "d"],
+    "original_distribution": 4,
+    "numberRemaining": 4
+}, {
+    "card": "3",
+    "value": 3,
+    "suites": ["a", "b", "c", "d"],
+    "original_distribution": 4,
+    "numberRemaining": 4
+}, {
+    "card": "4",
+    "value": 4,
+    "suites": ["a", "b", "c", "d"],
+    "original_distribution": 4,
+    "numberRemaining": 4
+}, {
+    "card": "5",
+    "value": 5,
+    "suites": ["a", "b", "c", "d"],
+    "original_distribution": 4,
+    "numberRemaining": 4
+}, {
+    "card": "6",
+    "value": 6,
+    "suites": ["a", "b", "c", "d"],
+    "original_distribution": 4,
+    "numberRemaining": 4
+}, {
+    "card": "7",
+    "value": 7,
+    "suites": ["a", "b", "c", "d"],
+    "original_distribution": 4,
+    "numberRemaining": 4
+}, {
+    "card": "8",
+    "value": 8,
+    "suites": ["a", "b", "c", "d"],
+    "original_distribution": 4,
+    "numberRemaining": 4
+}, {
+    "card": "9",
+    "value": 9,
+    "suites": ["a", "b", "c", "d"],
+    "original_distribution": 4,
+    "numberRemaining": 4
+}, {
+    "card": "10",
+    "value": 10,
+    "suites": ["a", "b", "c", "d"],
+    "original_distribution": 4,
+    "numberRemaining": 4
+}, {
+    "card": "11",
+    "value": 10,
+    "suites": ["a", "b", "c", "d"],
+    "original_distribution": 4,
+    "numberRemaining": 4
+}, {
+    "card": "12",
+    "value": 10,
+    "suites": ["a", "b", "c", "d"],
+    "original_distribution": 4,
+    "numberRemaining": 4
+}, {
+    "card": "13",
+    "value": 10,
+    "suites": ["a", "b", "c", "d"],
+    "original_distribution": 4,
+    "numberRemaining": 4
+}]

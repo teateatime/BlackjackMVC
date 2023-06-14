@@ -1,0 +1,84 @@
+blackjack Json.txt
+
+
+var PlayingCards = [];
+PlayingCards[0] = { //Card: 2
+    "card": "2",
+    "value": 2,
+    "original_distribution": 4,
+    "number_remaining": 4
+};
+PlayingCards[1] = { //Card: 3
+    "card": "3",
+    "value": 3,
+    "original_distribution": 4,
+    "number_remaining": 4
+};
+PlayingCards[2] = { //Card: 4
+    "card": "4",
+    "value": 4,
+    "original_distribution": 4,
+    "number_remaining": 4
+};
+PlayingCards[3] = { //Card: 5
+    "card": "5",
+    "value": 5,
+    "original_distribution": 4,
+    "number_remaining": 4
+};
+PlayingCards[4] = { //Card: 6
+    "card": "6",
+    "value": 6,
+    "original_distribution": 4,
+    "number_remaining": 4
+};
+PlayingCards[5] = { //Card: 7
+    "card": "7",
+    "value": 7,
+    "original_distribution": 4,
+    "number_remaining": 4
+};
+PlayingCards[6] = { //Card: 8
+    "card": "8",
+    "value": 8,
+    "original_distribution": 4,
+    "number_remaining": 4
+};
+PlayingCards[7] = { //Card: 9
+    "card": "9",
+    "value": 9,
+    "original_distribution": 4,
+    "number_remaining": 4
+};
+PlayingCards[8] = { //Card: 10
+    "card": "10",
+    "value": 10,
+    "original_distribution": 4,
+    "number_remaining": 4
+};
+PlayingCards[9] = { //Card: Jack
+    "card": "11",
+    "value": 10,
+    "original_distribution": 4,
+    "number_remaining": 4
+};
+PlayingCards[10] = { //Card: Queen
+    "card": "12",
+    "value": 10,
+    "original_distribution": 4,
+    "number_remaining": 4
+};
+PlayingCards[11] = { //Card: King
+    "card": "13",
+    "value": 10,
+    "original_distribution": 4,
+    "number_remaining": 4
+};
+//Ace will need to be tested for 1 and 11
+//If score is under 21, Keep it at 11. If the score goes over 21, change it to 1
+PlayingCards[12] = { //Card: Ace
+    "card": "14",
+    "value": 1,
+    "original_distribution": 4,
+    "number_remaining": 4
+};
