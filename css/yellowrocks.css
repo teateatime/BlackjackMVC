@@ -84,7 +84,7 @@ div > div {
 }
 
 span {
-    color: #222;
+    color: #e4dede;
 }
 
 span.add-bold {
@@ -137,6 +137,7 @@ ul.nav {
 
 footer {
     font-size: 9px;
+    color: beige;
 }
 
 img {   
@@ -185,7 +186,7 @@ img {
 .title {
     font-weight: 200;
     font-size: 45px;
-    color: #2C4373;
+    color: beige;
 }
 
 .bg-tech {

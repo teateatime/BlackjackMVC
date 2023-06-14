@@ -18,57 +18,84 @@
     <link rel="stylesheet" href="css/yellowrocks.css" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        /* Set video as background */
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Place other elements above the video */
+        .content {
+            height: 100vh;
+            text-align: center;
+            z-index: 1;
+            position: relative;
+        }
+    </style>
 </head>
 
 <body>
-    <div class='text-center title'>Blackjack</div>
-    <!--Main description-->
-    <div class='container-fluid col-md-6'>
-        <div class='text-center title'>
-            Player's Cards
-        </div>
-        <hr class="title_hr" style="margin: 0 auto;">
-        <div class="bigg add-space">
-            <div class='text-center'>
-                <span id="playerCards"></span>
-                <br>
-                <span class="player-cards" id='playerScore'></span>
+    <video id="video-background" autoplay muted loop>
+        <source src="video/dots_-_75169 (1080p).mp4" type="video/mp4">
+        <!-- Add additional <source> tags for different video formats if needed -->
+    </video>
+
+    <div class="content">
+        <div class='text-center title'>Blackjack</div>
+        <!--Main description-->
+        <div class='container-fluid col-md-6'>
+            <div class='text-center title'>
+                Player's Cards
+            </div>
+            <hr class="title_hr" style="margin: 0 auto;">
+            <div class="bigg add-space">
+                <div class='text-center'>
+                    <span id="playerCards"></span>
+                    <br>
+                    <span class="player-cards" id='playerScore'></span>
+                </div>
             </div>
         </div>
-    </div>
-    <div class='container-fluid col-md-6'>
-        <div class='text-center title'>
-            Dealer's Cards
-        </div>
-        <hr class="title_hr" style="margin: 0 auto;">
-        <div class="bigg add-space">
-            <div class='text-center'>
-                <span id="dealerCards"></span>
-                <br>
-                <span class="player-cards" id='dealerScore'></span>
+        <div class='container-fluid col-md-6'>
+            <div class='text-center title'>
+                Dealer's Cards
+            </div>
+            <hr class="title_hr" style="margin: 0 auto;">
+            <div class="bigg add-space">
+                <div class='text-center'>
+                    <span id="dealerCards"></span>
+                    <br>
+                    <span class="player-cards" id='dealerScore'></span>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid col-md-12 text-center">
-        <span id="declareWinner" class="text-center"></span>
-        <br>
-        <br>
-        <form id="hitNstay">
-            <div class='container-fluid col-md-12 text-center'>
-                <input name="stay" type="button" id="stay" value="STAY" />
-            </div>
-            <div class='container-fluid col-md-12 text-center'>
-                <input name="hit" type="button" id="hit" value="HIT" />
-            </div>
-            <div class='container-fluid col-md-12 text-center'>
-                <input name="restart" type="button" id="restart" value="RESTART" />
-            </div>
-        </form>
-    </div>
-    <div class='container-fluid col-md-12 text-center'>
-        <footer class='text-center'>
-            Updated June 2023
-        </footer>
+        <div class="container-fluid col-md-12 text-center">
+            <span id="declareWinner" class="text-center"></span>
+            <br>
+            <br>
+            <form id="hitNstay">
+                <div class='container-fluid col-md-12 text-center'>
+                    <input name="stay" type="button" id="stay" value="STAY" />
+                </div>
+                <div class='container-fluid col-md-12 text-center'>
+                    <input name="hit" type="button" id="hit" value="HIT" />
+                </div>
+                <div class='container-fluid col-md-12 text-center'>
+                    <input name="restart" type="button" id="restart" value="RESTART" />
+                </div>
+            </form>
+        </div>
+        <div class='container-fluid col-md-12 text-center'>
+            <footer class='text-center'>
+                Updated June 2023
+            </footer>
+        </div>
     </div>
     <!-- jQuery -->
     <script src="js/jquery.js" type="text/javascript">
