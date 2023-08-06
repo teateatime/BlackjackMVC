@@ -263,12 +263,8 @@ form {
     padding-top: 0px;
 }    
 
-#playerScore, #dealerScore {
-    color: #615fcc;
-    filter: drop-shadow(0 0 15px #413edb) drop-shadow(0 0 50px #413edb) contrast(2) brightness(2);
-}
-
-#declareWinner {
-    color: #7270d4;
+#playerScore, #dealerScore, #declareWinner {
+    font-size: 12px;
+    color: #a3a2dd;
     filter: drop-shadow(0 0 15px #413edb) drop-shadow(0 0 50px #413edb) contrast(2) brightness(2);
 }
