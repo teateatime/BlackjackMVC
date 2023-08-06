@@ -18,14 +18,14 @@ html, body{
 }
 
 input {
-    color: #653edb;
+    color: #3e4edb;
     background: black;
-    border: 2px solid #653edb;
+    border: 2px solid #3e4edb;
     border-radius: 0px;
     font-size: 13px!important;
     font-family: tahoma;
     cursor: pointer;
-    filter: drop-shadow(0 0 15px #5b3edb) drop-shadow(0 0 50px #753edb) contrast(2) brightness(2);
+    filter: drop-shadow(0 0 15px #483edb) drop-shadow(0 0 50px #483edb) contrast(2) brightness(2);
 }
 
 .bg-sky {
@@ -148,8 +148,8 @@ ul.nav {
 
 footer {
     font-size: 12px;
-    color: #8a72d1;
-    filter: drop-shadow(0 0 15px #5b3edb) drop-shadow(0 0 50px #753edb) contrast(2) brightness(2);
+    color: #7270d4;
+    filter: drop-shadow(0 0 15px #413edb) drop-shadow(0 0 50px #413edb) contrast(2) brightness(2);
 }
 
 img {   
@@ -198,8 +198,8 @@ img {
 .title {
     font-weight: 200;
     font-size: 45px;
-    color: #653edb;
-    filter: drop-shadow(0 0 15px #5b3edb) drop-shadow(0 0 50px #753edb) contrast(2) brightness(2);
+    color: #4e3edb;
+    filter: drop-shadow(0 0 15px #483edb) drop-shadow(0 0 50px #483edb) contrast(2) brightness(2);
 }
 
 .bg-tech {
@@ -264,6 +264,6 @@ form {
 }    
 
 #playerScore, #dealerScore {
-    color: #8a72d1;
-    filter: drop-shadow(0 0 15px #5b3edb) drop-shadow(0 0 50px #753edb) contrast(2) brightness(2);
+    color: #615fcc;
+    filter: drop-shadow(0 0 15px #413edb) drop-shadow(0 0 50px #413edb) contrast(2) brightness(2);
 }
