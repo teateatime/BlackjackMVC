@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,27 +45,53 @@
         <source src="video/dots_-_120172 (360p).mp4" type="video/mp4">
         <!-- Credit to Video by <a href="https://pixabay.com/users/hirken8-15545620/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=120172">Hiran Shrestha</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=120172">Pixabay</a> -->
     </video>
+
     <div class="content">
         <div class='text-center title'>Blackjack</div>
-        <div class="container-fluid text-center" id="about-container">
-            <h1 id="about-title">About</h1>
-            <p id="about">
-                Blackjack is a casino based card game.
-                It uses decks of 52 cards and descends from a global family of casino banking games known as "twenty-one". 
-                Where the main goal is to try to acquire cards with a face value as close as possible to 21 without going 
-                over that value.
-            </p>
+        <!--Main description-->
+        <div class='container-fluid col-md-6'>
+            <div class='text-center title'>
+                Player's Cards
+            </div>
+            <hr class="title_hr" style="margin: 0 auto;">
+            <div class="bigg add-space">
+                <div class='text-center'>
+                    <span id="playerCards"></span>
+                    <br>
+                    <span class="player-cards" id='playerScore'></span>
+                </div>
+            </div>
         </div>
-        <form>
-            <div class='container-fluid col-md-12 text-center'>
-                <input name="start" type="button" id="start" value="START" />
+        <div class='container-fluid col-md-6'>
+            <div class='text-center title'>
+                Dealer's Cards
             </div>
-            <br><br><br>
-            <div class='container-fluid col-md-12 text-center'>
-                <input name="quit" type="button" id="quit" value="QUIT" />
+            <hr class="title_hr" style="margin: 0 auto;">
+            <div class="bigg add-space">
+                <div class='text-center'>
+                    <span id="dealerCards"></span>
+                    <br>
+                    <span class="player-cards" id='dealerScore'></span>
+                </div>
             </div>
-        </form>
-        <div class='container-fluid col-md-12 text-center p-5' style="position: fixed; bottom: 0;">
+        </div>
+        <div class="container-fluid col-md-12 text-center">
+            <span id="declareWinner" class="text-center"></span>
+            <br>
+            <br>
+            <form id="hitNstay">
+                <div class='container-fluid col-md-12 text-center'>
+                    <input name="stay" type="button" id="stay" value="STAY" />
+                </div>
+                <div class='container-fluid col-md-12 text-center'>
+                    <input name="hit" type="button" id="hit" value="HIT" />
+                </div>
+                <div class='container-fluid col-md-12 text-center'>
+                    <input name="restart" type="button" id="restart" value="RESTART" />
+                </div>
+            </form>
+        </div>
+        <div class='container-fluid col-md-12 text-center'>
             <footer class='text-center'>
                 Updated March 2024
             </footer>
@@ -96,4 +123,5 @@
     <script src="js/blackjack/controller.js" type="text/javascript">
     </script>
 </body>
+
 </html>

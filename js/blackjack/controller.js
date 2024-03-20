@@ -20,6 +20,7 @@ GameController.prototype = {
         this.model.generateScore(this.model.getPlayerHand(), "player");
         this.view.dealTheHand(hand[0], this.model.getPlayerSuites(), this.model.getFace(), "player");
         this.view.showScore(this.model.getPlayerScore(), "player");
+        this.view.showStayAndHit();
     },
     //when hit, get a card and push it into the player's hand
     hit: function() {
@@ -35,10 +36,10 @@ GameController.prototype = {
             this.view.dealTheHand(this.model.getDealerHand(), this.model.getDealerSuites(), this.model.getFace(), "dealer");
             this.view.showWinner("Dealer Wins!");
             this.view.showScore(this.model.getDealerScore(), "dealer");
-
-
+            
             $("#hit").prop('disabled', true);
             $("#stay").prop('disabled', true);
+            this.view.removeStayAndHit();
         }
     },
     //when player stays, dealer generates new cards if < playerScore
@@ -59,14 +60,19 @@ GameController.prototype = {
         //show who wins the game
         var theWinner = this.model.getWinner(this.model.getPlayerScore(), this.model.getDealerScore());
         if (theWinner === 0) {
+            this.view.removeStayAndHit();
             this.view.showWinner("Tied Game. Pushed!");
         } else if (theWinner === 1) {
+            this.view.removeStayAndHit();
             this.view.showWinner("Blackjack! Player Wins!");
         } else if (theWinner === 2) {
+            this.view.removeStayAndHit();
             this.view.showWinner("Player Wins!");
         } else if (theWinner === 3) {
+            this.view.removeStayAndHit();
             this.view.showWinner("Blackjack! Dealer Wins!");
         } else if (theWinner === 4) {
+            this.view.removeStayAndHit();
             this.view.showWinner("Dealer Wins!");
         }
     },

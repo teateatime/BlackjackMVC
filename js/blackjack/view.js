@@ -16,6 +16,14 @@ function GameView() {
         $("#hit").prop('disabled', false);
         controller.restart();
     });
+
+    $("#start").click(function(){
+        window.location.href = "game.html";
+    });
+
+    $("#quit").click(function(){
+        window.close();
+    });
 }
 
 //view functions
@@ -50,6 +58,16 @@ GameView.prototype = {
         } else if (who === "dealer") {
             $("#dealerScore").html(score);
         }
+    },
+    //hide stay and hit buttons
+    removeStayAndHit: function() {
+        $("#stay").hide();
+        $("#hit").hide();
+    },
+    // show stay and hit buttons
+    showStayAndHit: function() {
+        $("#stay").show();
+        $("#hit").show();        
     },
     //display who the winner is
     showWinner: function(winner) {

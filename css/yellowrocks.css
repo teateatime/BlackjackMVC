@@ -263,8 +263,18 @@ form {
     padding-top: 0px;
 }    
 
-#playerScore, #dealerScore, #declareWinner {
-    font-size: 12px;
+#playerScore, #dealerScore, #declareWinner, #about {
+    font-size: 16px;
     color: #a3a2dd;
     filter: drop-shadow(0 0 15px #413edb) drop-shadow(0 0 50px #413edb) contrast(2) brightness(2);
+}
+
+#about-title {
+    font-size: 25px;
+    color: #a3a2dd;
+    filter: drop-shadow(0 0 15px #413edb) drop-shadow(0 0 50px #413edb) contrast(2) brightness(2);
+}
+
+#about-container {
+    padding: 50px;
 }
